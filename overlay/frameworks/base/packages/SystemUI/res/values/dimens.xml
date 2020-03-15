@@ -20,4 +20,7 @@
     <dimen name="status_bar_padding_start">2dp</dimen>
     <dimen name="status_bar_padding_end">2dp</dimen>
     <dimen name="qs_header_tile_margin_horizontal">1dp</dimen>
+
+    <!-- the padding on the start and the end of the statusbar -->
+    <dimen name="status_bar_extra_padding">10dp</dimen>
 </resources>
