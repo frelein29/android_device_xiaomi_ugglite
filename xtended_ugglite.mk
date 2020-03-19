@@ -20,8 +20,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n.mk)
 
-# Inherit some common AOSIP stuff
-$(call inherit-product, vendor/aosip/config/common_full_phone.mk)
+# Inherit some common Xtended stuff
+$(call inherit-product, vendor/xtended/config/common_full_phone.mk)
 
 # Inherit from ugglite device
 $(call inherit-product, device/xiaomi/ugglite/device.mk)
@@ -32,7 +32,7 @@ IS_PHONE := true
 TARGET_MINIMAL_APPS := false
 TARGET_INCLUDE_STOCK_ARCORE := true
 
-PRODUCT_NAME := derp_ugglite
+PRODUCT_NAME := xtended_ugglite
 PRODUCT_DEVICE := ugglite
 PRODUCT_MODEL := Redmi Note 5A
 PRODUCT_BRAND := Xiaomi
@@ -44,7 +44,10 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE="ugglite" \
     PRODUCT_NAME="ugglite" \
-    PRIVATE_BUILD_DESC="ugglite-user 7.1.2 N2G47H V9.1.2.0.NDFMIEI release-keys"
+    PRIVATE_BUILD_DESC="ugglite-user 7.1.2 N2G47H V11.0.3.0.NDFMIXM release-keys"
 
 # Set BUILD_FINGERPRINT variable
-BUILD_FINGERPRINT := "xiaomi/ugglite/ugglite:7.1.2/N2G47H/V9.1.2.0.NDFMIEI:user/release-keys"
+BUILD_FINGERPRINT := "xiaomi/ugglite/ugglite:7.1.2/N2G47H/V11.0.3.0.NDFMIXM:user/release-keys"
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.xtended.maintainer=adislice

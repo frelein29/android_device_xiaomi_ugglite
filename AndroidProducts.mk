@@ -14,8 +14,8 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/derp_ugglite.mk
+    $(LOCAL_DIR)/xtended_ugglite.mk
 
 COMMON_LUNCH_CHOICES := \
-    derp_ugglite-user \
-    derp_ugglite-userdebug
+    xtended_ugglite-user \
+    xtended_ugglite-userdebug
